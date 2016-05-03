@@ -5,12 +5,12 @@ import java.util.*;
 public class AVLTree<T extends Comparable<T>> implements Collection<T>{
 
     private Node<T> root;
-    private Node<T> nil;
+    //private Node<T> nil;
     private int size;
 
     public AVLTree(){
         this.root = null;
-        this.nil = new Node<T>();
+        //this.nil = new Node<T>();
         this.size = 0;
     }
 
@@ -63,7 +63,8 @@ public class AVLTree<T extends Comparable<T>> implements Collection<T>{
         root = insert(root,data,null);
     }
 
-    private void del(Node<T> current, T data){
+    private Node<T> delete(Node<T> current,T data){
+        if (current == null) return null;
         int compareResult = data.compareTo(current.getData());
         if (compareResult > 0)
             current.setRight(delete(current.getRight(),data));
@@ -100,11 +101,6 @@ public class AVLTree<T extends Comparable<T>> implements Collection<T>{
             else if (current.getBalance() == 2)
                 current = rightRotation(current);
         }
-    }
-
-    private Node<T> delete(Node<T> current,T data){
-        if (current == null) return null;
-        del(current,data);
         return current;
     }
 
@@ -214,14 +210,14 @@ public class AVLTree<T extends Comparable<T>> implements Collection<T>{
 
     public class Iterator implements java.util.Iterator<T> {
 
-        private Node<T> it = nil;
+        private Node<T> it = null;
         private Stack<Node<T>> stack = new Stack<>();
 
         public Iterator() {
             it = root;
-            if (it == nil) return;
-            stack.push(nil);
-            while (it.getLeft() != nil) {
+            if (it == null) return;
+            stack.push(null);
+            while (it.getLeft() != null) {
                 stack.push(it);
                 it = it.getLeft();
             }
@@ -229,18 +225,18 @@ public class AVLTree<T extends Comparable<T>> implements Collection<T>{
 
         @Override
         public boolean hasNext() {
-            return it != nil;
+            return it != null;
         }
 
         @Override
         public T next() {
             T val;
-            if (it != nil)
+            if (it != null)
                 val = it.getData();
             else throw new NoSuchElementException();
-            if (it.getRight() != nil) {
+            if (it.getRight() != null) {
                 it = it.getRight();
-                while (it.getLeft() != nil) {
+                while (it.getLeft() != null) {
                     stack.push(it);
                     it = it.getLeft();
                 }
@@ -286,36 +282,18 @@ public class AVLTree<T extends Comparable<T>> implements Collection<T>{
 
     @Override
     public boolean add(T t) {
-        Node<T> current = root;
-        Node<T> parent = null;
-        if (current == null){
-            size++;
-            root = new Node<T>(t, parent);
-            return true;
-        }
-        int compareResult = t.compareTo(current.getData());
-        if (compareResult > 0) {
-            current.setRight(insert(current.getRight(), t, current));
-            current.setH(height(current.getLeft(), current.getRight()) + 1);
-        } else if (compareResult < 0) {
-            current.setLeft(insert(current.getLeft(), t, current));
-            current.setH(height(current.getLeft(), current.getRight()) + 1);
-        } else current.setData(t);
-        current.setBalance(balance(current.getLeft(), current.getRight()));
-        if (current.getBalance() == -2)
-            current = leftRotation(current);
-        else if (current.getBalance() == 2)
-            current = rightRotation(current);
-        root = current;
-        return false;
+        if (find(t) != null)
+            return false;
+        insert(t);
+        return true;
     }
 
     @Override
     public boolean remove(Object o) {
-        Node<T> current = root;
-        T data = (T) o ;
-        if (current == null) return false;
-        del(current, data);
+        T t = (T) o;
+        if (find(t) == null)
+            return false;
+        delete(t);
         return true;
     }
 
