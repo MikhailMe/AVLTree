@@ -11,6 +11,8 @@ public class Main {
         avl.insert(7);
         avl.insert(0);
         avl.insert(3);
+        //System.out.println(avl.add(6));
         avl.print();
+
     }
 }

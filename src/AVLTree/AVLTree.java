@@ -1,16 +1,17 @@
 package AVLTree;
 
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
 
 public class AVLTree<T extends Comparable<T>> implements Collection<T>{
 
     private Node<T> root;
+    private Node<T> nil;
     private int size;
 
     public AVLTree(){
         this.root = null;
-        size = 0;
+        this.nil = new Node<T>();
+        this.size = 0;
     }
 
     private int height(Node<T> x, Node<T> y){
@@ -62,8 +63,7 @@ public class AVLTree<T extends Comparable<T>> implements Collection<T>{
         root = insert(root,data,null);
     }
 
-    private Node<T> delete(Node<T> current,T data){
-        if (current == null) return null;
+    private void del(Node<T> current, T data){
         int compareResult = data.compareTo(current.getData());
         if (compareResult > 0)
             current.setRight(delete(current.getRight(),data));
@@ -100,6 +100,11 @@ public class AVLTree<T extends Comparable<T>> implements Collection<T>{
             else if (current.getBalance() == 2)
                 current = rightRotation(current);
         }
+    }
+
+    private Node<T> delete(Node<T> current,T data){
+        if (current == null) return null;
+        del(current,data);
         return current;
     }
 
@@ -203,71 +208,175 @@ public class AVLTree<T extends Comparable<T>> implements Collection<T>{
     }
 
     @Override
-    public Iterator<T> iterator() {
-        return null;
+    public Iterator iterator() {
+        return new Iterator();
+    }
+
+    public class Iterator implements java.util.Iterator<T> {
+
+        private Node<T> it = nil;
+        private Stack<Node<T>> stack = new Stack<>();
+
+        public Iterator() {
+            it = root;
+            if (it == nil) return;
+            stack.push(nil);
+            while (it.getLeft() != nil) {
+                stack.push(it);
+                it = it.getLeft();
+            }
+        }
+
+        @Override
+        public boolean hasNext() {
+            return it != nil;
+        }
+
+        @Override
+        public T next() {
+            T val;
+            if (it != nil)
+                val = it.getData();
+            else throw new NoSuchElementException();
+            if (it.getRight() != nil) {
+                it = it.getRight();
+                while (it.getLeft() != nil) {
+                    stack.push(it);
+                    it = it.getLeft();
+                }
+            } else it = stack.pop();
+            return val;
+        }
+
+        @Override
+        public void remove() {
+        }
     }
 
     @Override
     public Object[] toArray() {
         Object[] result = new Object[size];
-        for (int i = 0; i < size ; i++) {
-
+        int index = 0;
+        for (T it : this) {
+            result[index] = it;
+            index++;
         }
         return result;
     }
 
     @Override
     public <T1> T1[] toArray(T1[] a) {
-        return null;
+        if (a.length >= size) {
+            int index = 0;
+            for (T i : this) {
+                a[index] = (T1) i;
+                index++;
+            }
+            return a;
+        } else {
+            T1[] b = (T1[]) new Object[size];
+            int index = 0;
+            for (T i : this) {
+                b[index] = (T1) i;
+                index++;
+            }
+            return b;
+        }
     }
 
     @Override
     public boolean add(T t) {
+        Node<T> current = root;
+        Node<T> parent = null;
+        if (current == null){
+            size++;
+            root = new Node<T>(t, parent);
+            return true;
+        }
+        int compareResult = t.compareTo(current.getData());
+        if (compareResult > 0) {
+            current.setRight(insert(current.getRight(), t, current));
+            current.setH(height(current.getLeft(), current.getRight()) + 1);
+        } else if (compareResult < 0) {
+            current.setLeft(insert(current.getLeft(), t, current));
+            current.setH(height(current.getLeft(), current.getRight()) + 1);
+        } else current.setData(t);
+        current.setBalance(balance(current.getLeft(), current.getRight()));
+        if (current.getBalance() == -2)
+            current = leftRotation(current);
+        else if (current.getBalance() == 2)
+            current = rightRotation(current);
+        root = current;
         return false;
     }
 
     @Override
     public boolean remove(Object o) {
-        return false;
+        Node<T> current = root;
+        T data = (T) o ;
+        if (current == null) return false;
+        del(current, data);
+        return true;
     }
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        Iterator i = c.iterator();
-        for (int k = 0; k < c.size(); ++k)
-            if (find((T)i.next()) == null)
+        for (Object it : c)
+            if (!contains(it))
                 return false;
         return true;
     }
 
     @Override
     public boolean addAll(Collection<? extends T> c) {
-        Iterator i = c.iterator();
-        for (int k = 0; k < c.size(); ++k) {
-            add((T)i.next());
-            if (!add((T)i.next()))
-                return false;
-        }
-        return true;
+        int counter = this.size;
+        for (Object it : c)
+            add((T) it);
+        if(this.size > counter)
+            return true;
+        else return false;
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        Iterator i = c.iterator();
-        for (int k = 0; k < c.size(); ++k) {
-            remove((T)i.next());
-            if (!remove((T)i.next()))
-                return false;
-        }
-        return true;
+        int counter = this.size;
+        for (Object it : c)
+            if (contains(it))
+                remove((T) it);
+        if(this.size < counter)
+            return true;
+        else return false;
     }
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        return false;
+        int counter = this.size;
+        LinkedList list = new LinkedList();
+        for (T it : this)
+            if (!c.contains(it))
+                list.add(it);
+        removeAll(list);
+        return this.size < counter;
     }
 
     @Override
     public void clear() {
+        for (T t : this)
+            remove(t);
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if (this == o) return true;
+        if (o instanceof AVLTree) {
+            AVLTree<T> tree = (AVLTree<T>) o;
+            return (size == tree.size && containsAll(tree));
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode(){
+        return 1;
     }
 }

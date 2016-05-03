@@ -9,14 +9,22 @@ public class Node<T extends Comparable<T>> implements Comparable<T>{
     private Node<T> right;
     private Node<T> parent;
 
-    public Node(T newData, Node<T> newParent){
+    public Node(){
+        this.data = null;
+        left = this;
+        right = this;
+        parent = this;
+    }
+
+    public Node(T newData, Node<T> newParent) {
         this.data = newData;
         this.parent = newParent;
-        this.left =null;
+        this.left = null;
         this.right = null;
         this.h = 1;
         this.balance = 0;
     }
+
     public T getData() {
         return data;
     }
