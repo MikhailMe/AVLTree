@@ -345,8 +345,7 @@ package AVLTree;
 
         @Override
         public void clear() {
-            LinkedList<T> list = new LinkedList<>();
-            this.retainAll(list);
+            this.retainAll(new LinkedList<T>());
         }
 
         @Override
