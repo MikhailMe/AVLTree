@@ -4,6 +4,35 @@ package AVLTree;
 
     public class AVLTree<T extends Comparable<T>> implements Collection<T>{
 
+        private class Node<T extends Comparable<T>> implements Comparable<T>{
+
+            private T data;
+            private int h;
+            private int balance;
+            private Node<T> left;
+            private Node<T> right;
+            private Node<T> parent;
+
+            public Node(){
+                this.data = null;
+                left = this;
+                right = this;
+                parent = this;
+            }
+            public Node(T newData, Node<T> newParent) {
+                this.data = newData;
+                this.parent = newParent;
+                this.left = null;
+                this.right = null;
+                this.h = 1;
+                this.balance = 0;
+            }
+            @Override
+            public int compareTo(T o) {
+                return o.compareTo(data);
+            }
+        }
+
         private Node<T> current;
         private int size;
 
@@ -14,34 +43,34 @@ package AVLTree;
 
         private int height(Node<T> x, Node<T> y){
             if (x == null && y == null) return 0;
-            else if (x == null) return y.getH();
-            else if (y == null) return x.getH();
-            else return Math.max(x.getH(), y.getH());
+            else if (x == null) return y.h;
+            else if (y == null) return x.h;
+            else return Math.max(x.h, y.h);
         }
 
         private int balance(Node<T> x, Node<T> y){
             if (x == null && y == null) return 0;
-            else if (x == null) return -y.getH();
-            else if (y == null) return x.getH();
-            else return x.getH() - y.getH();
+            else if (x == null) return -y.h;
+            else if (y == null) return x.h;
+            else return x.h - y.h;
         }
 
         private Node<T> min(Node<T> current){
-            if (current.getLeft() == null) return current;
-            return min(current.getLeft());
+            if (current.left == null) return current;
+            return min(current.left);
         }
 
         public T min(){
-            return min(current).getData();
+            return min(current).data;
         }
 
         private Node<T> max(Node<T> current){
-            if (current.getRight() == null) return current;
-            return max(current.getRight());
+            if (current.right == null) return current;
+            return max(current.right);
         }
 
         public T max() {
-            return  max(current).getData();
+            return  max(current).data;
         }
 
         private Node<T> insert(Node<T> current,T data,Node<T> parent) {
@@ -49,18 +78,18 @@ package AVLTree;
                 size++;
                 return new Node<T>(data, parent);
             }
-            int compareResult = data.compareTo(current.getData());
+            int compareResult = data.compareTo(current.data);
             if (compareResult > 0) {
-                current.setRight(insert(current.getRight(), data, current));
-                current.setH(height(current.getLeft(), current.getRight()) + 1);
+                current.right = insert(current.right, data, current);
+                current.h = height(current.left, current.right) + 1;
             } else if (compareResult < 0) {
-                current.setLeft(insert(current.getLeft(), data, current));
-                current.setH(height(current.getLeft(), current.getRight()) + 1);
-            } else current.setData(data);
-            current.setBalance(balance(current.getLeft(), current.getRight()));
-            if (current.getBalance() == -2)
+                current.left = insert(current.left, data, current);
+                current.h = height(current.left, current.right) + 1;
+            } else current.data = data;
+            current.balance = balance(current.left, current.right);
+            if (current.balance == -2)
                 current = leftRotation(current);
-            else if (current.getBalance() == 2)
+            else if (current.balance == 2)
                 current = rightRotation(current);
             return current;
         }
@@ -71,40 +100,40 @@ package AVLTree;
 
         private Node<T> delete(Node<T> current,T data){
             if (current == null) return null;
-            int compareResult = data.compareTo(current.getData());
+            int compareResult = data.compareTo(current.data);
             if (compareResult > 0)
-                current.setRight(delete(current.getRight(),data));
+                current.right = delete(current.right,data);
             else if (compareResult < 0)
-                current.setLeft(delete(current.getLeft(),data));
+                current.left = delete(current.left,data);
             else{
-                if (current.getRight() == null &&current.getLeft() == null)
+                if (current.right == null &&current.left == null)
                     current = null;
-                else if (current.getRight() == null){
-                    current.getLeft().setParent(current.getParent());
-                    current = current.getLeft();
-                } else if (current.getLeft() == null){
-                    current.getRight().setParent(current.getParent());
-                    current = current.getRight();
+                else if (current.right == null){
+                    current.left.parent = current.parent;
+                    current = current.left;
+                } else if (current.left == null){
+                    current.right.parent = current.parent;
+                    current = current.right;
                 } else {
-                    if (current.getRight().getLeft() == null){
-                        current.getRight().setLeft(current.getLeft());
-                        current.getRight().setParent(current.getParent());
-                        current.getRight().setParent(current.getParent());
-                        current.getLeft().setParent(current.getRight());
-                        current = current.getRight();
+                    if (current.right.left == null){
+                        current.right.left = current.left;
+                        current.right.parent = current.parent;
+                        current.right.parent = current.parent;
+                        current.left.parent = current.right;
+                        current = current.right;
                     } else {
-                        Node<T> result = min(current.getRight());
-                        current.setData(result.getData());
-                        delete(current.getRight(),current.getData());
+                        Node<T> result = min(current.right);
+                        current.data = result.data;
+                        delete(current.right,current.data);
                     }
                 }
             }
             if (current != null){
-                current.setH(height(current.getLeft(),current.getRight())+1);
-                current.setBalance(balance(current.getLeft(),current.getRight()));
-                if (current.getBalance() == -2)
+                current.h = height(current.left,current.right)+1;
+                current.h = balance(current.left,current.right);
+                if (current.balance == -2)
                     current = leftRotation(current);
-                else if (current.getBalance() == 2)
+                else if (current.balance == 2)
                     current = rightRotation(current);
             }
             return current;
@@ -116,51 +145,51 @@ package AVLTree;
         }
 
         private Node<T> leftRotation(Node<T> current){
-            if (current.getRight().getRight() == null && current.getRight().getLeft() != null){
-                current.setRight(rightRotation(current.getRight()));
+            if (current.right.right == null && current.right.left != null){
+                current.right = rightRotation(current.right);
                 current = leftRotation(current);
-            } else if (current.getRight().getLeft() == null ||
-                    current.getRight().getLeft().getH() <= current.getRight().getRight().getH()){
-                Node<T> node = current.getRight();
-                node.setParent(current.getParent());
-                current.setRight(node.getLeft());
-                if (current.getRight() != null)
-                    current.getRight().setParent(current);
-                current.setH(height(current.getLeft(),current.getRight())+1);
-                current.setParent(node);
-                current.setBalance(balance(current.getLeft(),current.getRight()));
-                node.setLeft(current);
+            } else if (current.right.left == null ||
+                    current.right.left.h <= current.right.right.h){
+                Node<T> node = current.right;
+                node.parent = current.parent;
+                current.right = node.left;
+                if (current.right != null)
+                    current.right.parent = current;
+                current.h = height(current.left,current.right)+1;
+                current.parent = node;
+                current.balance = balance(current.left,current.right);
+                node.left = current;
                 current = node;
-                current.setBalance(balance(current.getLeft(),current.getRight()));
-                current.setH(height(current.getLeft(),current.getRight())+1);
+                current.balance = balance(current.left,current.right);
+                current.h = height(current.left,current.right)+1;
             } else{
-                current.setRight(rightRotation(current.getRight()));
+                current.right = rightRotation(current.right);
                 current = leftRotation(current);
             }
             return current;
         }
 
         private Node<T> rightRotation(Node<T> current){
-            if (current.getLeft().getRight() != null &&
-                    current.getLeft().getLeft() == null){
-                current.setLeft(leftRotation(current.getLeft()));
+            if (current.left.right != null &&
+                    current.left.left == null){
+                current.left = leftRotation(current.left);
                 current = rightRotation(current);
-            } else if (current.getLeft().getRight() == null ||
-                    current.getLeft().getRight().getH() <= current.getLeft().getLeft().getH()){
-                Node<T> node = current.getLeft();
-                node.setParent(current.getParent());
-                current.setLeft(node.getRight());
-                if (current.getLeft() != null)
-                    current.getLeft().setParent(current);
-                current.setH(height(current.getLeft(),current.getRight())+1);
-                current.setParent(node);
-                current.setBalance(balance(current.getLeft(),current.getRight()));
-                node.setRight(current);
+            } else if (current.left.right == null ||
+                    current.left.right.h <= current.left.left.h){
+                Node<T> node = current.left;
+                node.parent = current.parent;
+                current.left = node.right;
+                if (current.left != null)
+                    current.left.parent = current;
+                current.h = height(current.left,current.right)+1;
+                current.parent = node;
+                current.balance = balance(current.left,current.right);
+                node.right = current;
                 current = node;
-                current.setBalance(balance(current.getLeft(),current.getRight()));
-                current.setH(height(current.getLeft(),current.getRight())+1);
+                current.balance = balance(current.left,current.right);
+                current.h = height(current.left,current.right)+1;
             } else {
-                current.setLeft(leftRotation(current.getLeft()));
+                current.left = leftRotation(current.left);
                 current = rightRotation(current);
             }
             return current;
@@ -168,12 +197,12 @@ package AVLTree;
 
         private T find(Node<T> current, T data){
             if (current == null) return null;
-            int compareResult = data.compareTo(current.getData());
+            int compareResult = data.compareTo(current.data);
             if (compareResult == 0)
-                return current.getData();
+                return current.data;
             else if (compareResult > 0)
-                return find(current.getRight(),data);
-            else return find(current.getLeft(),data);
+                return find(current.right,data);
+            else return find(current.left,data);
         }
 
         private T find(T data){
@@ -182,11 +211,11 @@ package AVLTree;
 
         private void print(Node<T> current, int level){
             if (current != null){
-                print(current.getRight(),level+1);
+                print(current.right,level+1);
                 for (int i = 0; i < level; ++i)
                     System.out.print("\t");
-                System.out.println(current.getData());
-                print(current.getLeft(),level+1);
+                System.out.println(current.data);
+                print(current.left,level+1);
             }
         }
 
@@ -223,9 +252,9 @@ package AVLTree;
                 it = current;
                 if (it == null) return;
                 stack.push(null);
-                while (it.getLeft() != null) {
+                while (it.left != null) {
                     stack.push(it);
-                    it = it.getLeft();
+                    it = it.left;
                 }
             }
 
@@ -238,13 +267,13 @@ package AVLTree;
             public T next() {
                 T val;
                 if (it != null)
-                    val = it.getData();
+                    val = it.data;
                 else throw new NoSuchElementException();
-                if (it.getRight() != null) {
-                    it = it.getRight();
-                    while (it.getLeft() != null) {
+                if (it.right != null) {
+                    it = it.right;
+                    while (it.left != null) {
                         stack.push(it);
-                        it = it.getLeft();
+                        it = it.left;
                     }
                 } else it = stack.pop();
                 return val;
