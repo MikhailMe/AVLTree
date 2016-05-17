@@ -17,6 +17,7 @@ public class AVLTreeTest {
         avl.insert(7);
         avl.insert(0);
         avl.insert(3);
+        assert (avl.isBalanced());
         assert (avl.contains(5));
         assert (avl.contains(10));
         assert (avl.contains(-2));
@@ -31,6 +32,7 @@ public class AVLTreeTest {
         assert (!avl.contains(10));
         avl.delete(0);
         assert (!avl.contains(0));
+        assert (avl.isBalanced());
     }
 
     @Test
@@ -41,6 +43,7 @@ public class AVLTreeTest {
         avl.insert(7);
         avl.insert(0);
         avl.insert(3);
+        assert (avl.isBalanced());
         assert (avl.min() == -2);
     }
 
@@ -52,6 +55,7 @@ public class AVLTreeTest {
         avl.insert(7);
         avl.insert(0);
         avl.insert(3);
+        assert (avl.isBalanced());
         assert (avl.max() == 10);
     }
 
@@ -65,6 +69,7 @@ public class AVLTreeTest {
         avl.delete(5);
         avl.delete(3);
         assert (avl.size() == 2);
+        assert (avl.isBalanced());
     }
 
     @Test
@@ -74,23 +79,29 @@ public class AVLTreeTest {
         avl.insert(11);
         avl.insert(12);
         avl.insert(13);
+        assert (avl.isBalanced());
         assert (!avl.isEmpty());
         avl.delete(11);
         avl.delete(13);
         avl.delete(12);
         avl.delete(10);
+        assert (avl.isBalanced());
         assert (avl.isEmpty());
     }
 
     @Test
     public void contains(){
         avl.insert(5);
+        assert (avl.isBalanced());
         assert (avl.contains(5));
         avl.add(10);
+        assert (avl.isBalanced());
         assert (avl.contains(10));
         avl.insert(11);
+        assert (avl.isBalanced());
         assert (avl.contains(11));
         avl.add(-4);
+        assert (avl.isBalanced());
         assert (avl.contains(-4));
     }
 
@@ -102,6 +113,7 @@ public class AVLTreeTest {
         avl.insert(7);
         avl.insert(0);
         avl.insert(3);
+        assert (avl.isBalanced());
         Object[] answer = avl.toArray();
         Object[] rightAnswer = {-2,0,3,5,7,10};
         Assert.assertArrayEquals(answer,rightAnswer);
@@ -115,6 +127,7 @@ public class AVLTreeTest {
         assert (avl.add(50));
         assert (!avl.add(5));
         assert (!avl.add(19));
+        assert (avl.isBalanced());
     }
 
     @Test
@@ -124,6 +137,7 @@ public class AVLTreeTest {
         avl.insert(0);
         avl.insert(-4);
         avl.insert(-6);
+        assert (avl.isBalanced());
         assert (avl.remove(6));
         assert (avl.remove(-6));
         assert (avl.remove(0));
@@ -139,6 +153,7 @@ public class AVLTreeTest {
         avl.insert(-4);
         avl.insert(-6);
         avl.insert(12);
+        assert (avl.isBalanced());
         list.add(6);
         list.add(12);
         list.add(5);
@@ -153,6 +168,7 @@ public class AVLTreeTest {
         avl.insert(-4);
         avl.insert(-6);
         avl.insert(12);
+        assert (avl.isBalanced());
         list.add(-1);
         list.add(-2);
         list.add(-3);
@@ -170,6 +186,7 @@ public class AVLTreeTest {
         avl.insert(-4);
         avl.insert(-6);
         avl.insert(12);
+        assert (avl.isBalanced());
         list.add(6);
         list.add(-4);
         list.add(5);
@@ -190,6 +207,7 @@ public class AVLTreeTest {
         avl.insert(-6);
         avl.insert(12);
         avl.insert(-1);
+        assert (avl.isBalanced());
         list.add(2);
         list.add(0);
         list.add(12);
@@ -206,6 +224,7 @@ public class AVLTreeTest {
     @Test
     public void clear(){
         avl.clear();
+        assert (avl.isBalanced());
         assert (avl.size() == 0);
         avl.insert(1);
         avl.insert(2);
@@ -216,6 +235,7 @@ public class AVLTreeTest {
         avl.insert(-6);
         avl.insert(12);
         avl.insert(-1);
+        assert (avl.isBalanced());
         avl.clear();
         assert (avl.size() == 0);
     }

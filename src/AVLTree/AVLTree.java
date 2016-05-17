@@ -33,12 +33,32 @@ package AVLTree;
             }
         }
 
-        private Node<T> current;
+        private Node<T> root;
         private int size;
 
         public AVLTree(){
-            this.current = null;
+            this.root = null;
             this.size = 0;
+        }
+
+        private int maxDepth(Node<T> current){
+            if (current == null)
+                return -1;
+            return 1 + Math.max(maxDepth(current.left), maxDepth(current.left));
+        }
+
+        private int minDepth(Node<T> current){
+            if (current == null)
+                return -1;
+            return 1 + Math.min(minDepth(current.left),minDepth(current.right));
+        }
+
+        private boolean isBalanced(Node<T> current){
+            return (maxDepth(current) - minDepth(current) <= 1);
+        }
+
+        public boolean isBalanced(){
+            return isBalanced(root);
         }
 
         private int height(Node<T> x, Node<T> y){
@@ -61,7 +81,7 @@ package AVLTree;
         }
 
         public T min(){
-            return min(current).data;
+            return min(root).data;
         }
 
         private Node<T> max(Node<T> current){
@@ -70,7 +90,7 @@ package AVLTree;
         }
 
         public T max() {
-            return  max(current).data;
+            return  max(root).data;
         }
 
         private Node<T> insert(Node<T> current,T data,Node<T> parent) {
@@ -95,7 +115,7 @@ package AVLTree;
         }
 
         public void insert(T data){
-            current = insert(current,data,null);
+            root = insert(root,data,null);
         }
 
         private Node<T> delete(Node<T> current,T data){
@@ -140,7 +160,7 @@ package AVLTree;
         }
 
         public void delete(T data){
-            current = delete(current, data);
+            root = delete(root, data);
             size--;
         }
 
@@ -206,7 +226,7 @@ package AVLTree;
         }
 
         private T find(T data){
-            return find(current,data);
+            return find(root,data);
         }
 
         private void print(Node<T> current, int level){
@@ -220,7 +240,7 @@ package AVLTree;
         }
 
         public void print(){
-            print(current,0);
+            print(root,0);
         }
 
         @Override
@@ -249,7 +269,7 @@ package AVLTree;
             private Stack<Node<T>> stack = new Stack<>();
 
             public Iterator() {
-                it = current;
+                it = root;
                 if (it == null) return;
                 stack.push(null);
                 while (it.left != null) {

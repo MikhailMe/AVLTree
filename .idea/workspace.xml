@@ -28,54 +28,36 @@
             <state relative-caret-position="204">
               <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding>
-                <element signature="e#147#156#0" expanded="false" />
+                <element signature="e#147#156#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AVLTree.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AVLTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="323">
+              <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
               <folding>
+                <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#897#898#0" expanded="false" />
-                <element signature="e#953#954#0" expanded="false" />
+                <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+                <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+                <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#height#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#1773#1774#0" expanded="false" />
-                <element signature="e#1821#1822#0" expanded="false" />
                 <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#1998#1999#0" expanded="false" />
-                <element signature="e#2047#2048#0" expanded="false" />
                 <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#3025#3026#0" expanded="false" />
-                <element signature="e#3084#3085#0" expanded="false" />
                 <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
                 <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#7764#7765#0" expanded="false" />
-                <element signature="e#7813#7814#0" expanded="false" />
                 <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#8191#8192#0" expanded="false" />
-                <element signature="e#8231#8232#0" expanded="false" />
-                <element signature="e#8278#8279#0" expanded="false" />
-                <element signature="e#8313#8314#0" expanded="false" />
-                <element signature="e#8367#8368#0" expanded="false" />
-                <element signature="e#8424#8425#0" expanded="false" />
-                <element signature="e#8487#8488#0" expanded="false" />
-                <element signature="e#8551#8552#0" expanded="false" />
-                <element signature="e#8607#8608#0" expanded="false" />
-                <element signature="e#8652#8653#0" expanded="false" />
                 <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#9159#9160#0" expanded="false" />
-                <element signature="e#9208#9209#0" expanded="false" />
                 <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
                 <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -84,24 +66,20 @@
                 <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
                 <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#12158#12159#0" expanded="false" />
-                <element signature="e#12217#12218#0" expanded="false" />
                 <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-                <element signature="e#12572#12573#0" expanded="false" />
-                <element signature="e#12604#12605#0" expanded="false" />
-                <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-                <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AVLTreeTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AVLTreeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test/AVLTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="3842">
+              <caret line="226" column="34" selection-start-line="226" selection-start-column="34" selection-end-line="226" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,8 +119,8 @@
         <option value="$PROJECT_DIR$/test/AVLTreeTest.kt" />
         <option value="$PROJECT_DIR$/src/Main/AVLTreeTest.java" />
         <option value="$PROJECT_DIR$/Test/AVLTree.java" />
-        <option value="$PROJECT_DIR$/src/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/AVLTree/Node.java" />
+        <option value="$PROJECT_DIR$/src/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/AVLTree/AVLTree.java" />
         <option value="$PROJECT_DIR$/Test/AVLTreeTest.java" />
       </list>
@@ -179,7 +157,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -251,7 +229,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,7 +243,7 @@
       <recent name="D:\Programming\Java\AVLTree\Test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.Test">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -563,9 +541,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test - 2016.05.05 at 19h 49m 19s.xml">
-      <configuration name="Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test - 2016.05.05 at 19h 51m 32s.xml">
       <configuration name="Test" configurationId="JUnit" />
     </history-entry>
@@ -593,10 +568,13 @@
     <history-entry file="Test - 2016.05.17 at 21h 57m 19s.xml">
       <configuration name="Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test - 2016.05.17 at 23h 15m 47s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -637,7 +615,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -660,60 +638,35 @@
         <state relative-caret-position="289">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -722,13 +675,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -747,60 +694,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -809,13 +731,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -834,60 +750,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1632">
           <caret line="295" column="8" selection-start-line="295" selection-start-column="8" selection-end-line="295" selection-end-column="8" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -896,13 +787,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -921,60 +806,35 @@
         <state relative-caret-position="204">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -983,13 +843,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1007,60 +861,35 @@
         <state relative-caret-position="204">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -1069,13 +898,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1093,60 +916,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4233">
           <caret line="272" column="1" selection-start-line="272" selection-start-column="1" selection-end-line="272" selection-end-column="1" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -1155,13 +953,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1179,60 +971,35 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4233">
           <caret line="272" column="1" selection-start-line="272" selection-start-column="1" selection-end-line="272" selection-end-column="1" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -1241,13 +1008,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1265,60 +1026,35 @@
         <state relative-caret-position="272">
           <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -1327,13 +1063,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1351,60 +1081,35 @@
         <state relative-caret-position="204">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
     <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
             <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
             <element signature="method#height#0;class#AVLTree#0" expanded="false" />
             <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
             <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
             <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
             <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
             <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
             <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
             <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
             <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
             <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
             <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
             <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
             <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
             <element signature="method#add#0;class#AVLTree#0" expanded="false" />
@@ -1413,13 +1118,7 @@
             <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
             <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
             <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1448,74 +1147,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
-            <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
-            <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#height#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#min#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1773#1774#0" expanded="false" />
-            <element signature="e#1821#1822#0" expanded="false" />
-            <element signature="method#max#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#1998#1999#0" expanded="false" />
-            <element signature="e#2047#2048#0" expanded="false" />
-            <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#3025#3026#0" expanded="false" />
-            <element signature="e#3084#3085#0" expanded="false" />
-            <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
-            <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#find#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#7764#7765#0" expanded="false" />
-            <element signature="e#7813#7814#0" expanded="false" />
-            <element signature="method#print#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#8191#8192#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8278#8279#0" expanded="false" />
-            <element signature="e#8313#8314#0" expanded="false" />
-            <element signature="e#8367#8368#0" expanded="false" />
-            <element signature="e#8424#8425#0" expanded="false" />
-            <element signature="e#8487#8488#0" expanded="false" />
-            <element signature="e#8551#8552#0" expanded="false" />
-            <element signature="e#8607#8608#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
-            <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#9159#9160#0" expanded="false" />
-            <element signature="e#9208#9209#0" expanded="false" />
-            <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
-            <element signature="method#add#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#remove#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#containsAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12158#12159#0" expanded="false" />
-            <element signature="e#12217#12218#0" expanded="false" />
-            <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
-            <element signature="e#12572#12573#0" expanded="false" />
-            <element signature="e#12604#12605#0" expanded="false" />
-            <marker date="1463511480823" expanded="false" signature="196:964" ph="{...}" />
-            <marker date="1463511480823" expanded="false" signature="612:836" ph="{...}" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/Node.java" />
+    <entry file="file://$PROJECT_DIR$/Test/AVLTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3842">
+          <caret line="226" column="34" selection-start-line="226" selection-start-column="34" selection-end-line="226" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1525,16 +1169,44 @@
         <state relative-caret-position="204">
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
-            <element signature="e#147#156#0" expanded="false" />
+            <element signature="e#147#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/AVLTreeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/AVLTree/AVLTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+          <folding>
+            <element signature="class#Node#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#AVLTree#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#maxDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#minDepth#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#height#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#balance#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#min#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#max#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#insert#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#delete#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#delete#1;class#AVLTree#0" expanded="false" />
+            <element signature="method#leftRotation#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#rightRotation#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#find#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#print#0;class#AVLTree#0" expanded="false" />
+            <element signature="class#Iterator#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#toArray#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#toArray#1;class#AVLTree#0" expanded="false" />
+            <element signature="method#add#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#remove#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#containsAll#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#addAll#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#removeAll#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#retainAll#0;class#AVLTree#0" expanded="false" />
+            <element signature="method#equals#0;class#AVLTree#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
