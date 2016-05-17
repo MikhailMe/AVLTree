@@ -34,6 +34,19 @@ public class AVLTreeTest {
         assert (!avl.contains(0));
         assert (avl.isBalanced());
     }
+    
+    @Test
+    public void checkBalance(){
+        avl.clear();
+        avl.add(1);
+        avl.add(2);
+        avl.add(3);
+        avl.add(4);
+        avl.add(5);
+        avl.add(6);
+        avl.add(7);
+        assert (avl.isBalanced());
+    }
 
     @Test
     public void min(){
