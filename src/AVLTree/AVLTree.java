@@ -394,7 +394,7 @@ package AVLTree;
 
         @Override
         public void clear() {
-            this.retainAll(new LinkedList<T>());
+            this.forEach(this::remove);
         }
 
         @Override
@@ -409,6 +409,23 @@ package AVLTree;
 
         @Override
         public int hashCode(){
-            return 1;
+            boolean booleanValue = true;
+            char charValue = 'd';
+            String stringValue = "someTestForHashCode";
+            long longValue = 34829245849498300l;
+            float floatValue = 345832400.93f;
+            double doubleValue = 98584292348454.9834;
+            byte[] arrayValue = {1, 2, 3};
+            int result = 26;
+            result = 26 * result + ( booleanValue ? 1 : 0 );
+            result = 26 * result + (int) charValue;
+            result = 26 * result + (stringValue == null ? 0 : stringValue.hashCode());
+            result = 26 * result + (int)(longValue - (longValue >>> 32));
+            result = 26 * result + Float.floatToIntBits(floatValue);
+            long longBits = Double.doubleToLongBits(doubleValue);
+            result = 26 * result + (int)(longBits - (longBits >>> 32));
+            for( byte b : arrayValue )
+                result = 26 * result + (int) b;
+            return result;
         }
 }
